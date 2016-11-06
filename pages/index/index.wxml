@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view>
+      <text>太原市</text>
+    </view>
+    <view>
+      <text>5</text>
+      <text>小时</text>
+      <text>[截至2016/11/6 下午4:39:51]</text>
+    </view>
+  </view>
+  <view class="entries">
+    <navigator class="entry" wx:for="{{entry}}" url="{{item.href}}">
+      <view>
+        <text class="text">{{item.text}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>
